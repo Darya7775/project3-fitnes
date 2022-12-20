@@ -12,6 +12,22 @@
   display: flex;
   justify-content: space-between;
   gap: 2rem;
+
+  @include vp-1199 {
+    padding-top: 6.25rem;
+    padding-bottom: 11.44rem;
+
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.6rem;
+  }
+
+  @include vp-767 {
+    padding-top: 4.38rem;
+    padding-bottom: 4.38rem;
+
+    row-gap: 2.5rem;
+  }
 }
 
 .gym__wrapper {
@@ -19,6 +35,19 @@
 
   padding-top: 2.38rem;
   padding-left: 3.75rem;
+
+  @include vp-1199 {
+    width: 33.38rem;
+    text-align: center;
+
+    padding: 0;
+    margin-left: 0;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    text-align: start;
+  }
 }
 
 .gym__wrapper h3 {
@@ -28,6 +57,20 @@
   letter-spacing: 0.03em;
 
   margin: 0 0 0.5rem;
+
+  @include vp-1199 {
+    font-size: 2.63em;
+    line-height: 1.19em;
+
+    margin: 0 0 0 -1rem;
+  }
+
+  @include vp-767 {
+    font-size: 2em;
+    line-height: 1.19em;
+
+    margin: 0;
+  }
 }
 
 .gym__wrapper p {
@@ -35,6 +78,10 @@
   line-height: 150%;
 
   margin: 0 0 2.49rem;
+
+  @include vp-1199 {
+    margin: 0 0 2.1rem;
+  }
 }
 
 .gym__wrap p {
@@ -45,12 +92,37 @@
   margin: 0 0 0.4rem;
 }
 
+.gym__wrapper-img {
+  width: 57%;
+  min-height: 25.1rem;
+
+  @include vp-1199 {
+    width: 100%;
+    min-height: 21.56rem;
+  }
+
+  @include vp-767 {
+    width: calc(100% + 30px);
+    min-height: 19.56rem;
+  }
+}
+
+.gym__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @include vp-767 {
+    min-height: 19.56rem;
+  }
+}
+
 .gym__video-wrapper {
   position: absolute;
-  width: 26.6%;
+  width: 34.6%;
   top: 53.7%;
   left: 39.6%;
-  height: 29.8%;
+  min-height: 14.25rem;
   background-color: #000000;
 
   &::after {
@@ -68,15 +140,37 @@
   &:hover .gym__video-button {
     opacity: 0.8;
   }
+
+  @include vp-1199 {
+    width: 34.6%;
+    min-height: 10.44rem;
+    top: 63.8%;
+    left: 32.7%;
+  }
+
+  @include vp-767 {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: calc(100% + 30px);
+    min-height: 10.43rem;
+  }
+}
+
+.gym__video-link {
+  display: block;
 }
 
 .gym__video-img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
   border: none;
+
+  @include vp-767 {
+    min-height: 10.43rem;
+  }
 }
 
 .gym__video-button {
@@ -111,6 +205,18 @@
 
   &:focus {
     opacity: 0.8;
+  }
+
+  @include vp-1199 {
+    width: 52px;
+    height: 52px;
+
+    &::after {
+      width: 12px;
+      height: 12px;
+
+      background-image: url('../img/svg/play-tablet.svg');
+    }
   }
 }
 
