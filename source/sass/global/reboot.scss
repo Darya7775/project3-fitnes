@@ -11,12 +11,13 @@ body {
   min-height: 100vh;
 }
 
-html {
-  font-style: normal;
-  font-weight: 400;
-  font-size: $fz-default;
-  line-height: 24px;
-  font-family: $ff-placeholder;
+body {
+  width: 100%;
+  height: 100%;
+
+  @include RobotoCondensed400;
+  font-size: 100%;
+  line-height: 150%;
   color: $color-default-black;
 
   -webkit-font-smoothing: antialiased;
@@ -25,11 +26,6 @@ html {
   text-rendering: optimizeLegibility;
   // если по прежнему есть проблемы с выравниванием
   // https://transfonter.org/ - включите настройку https://prnt.sc/12rnt6g и переконвертируйте шрифт
-}
-
-body {
-  width: 100%;
-  height: 100%;
 
   background-color: $color-default-white;
 }

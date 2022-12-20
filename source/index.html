@@ -7,20 +7,80 @@
     <meta name="description" content="Описание проекта">
     <title>ProjectName</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/alumni_sans_semibold.woff2" as="font">
+    <link rel="preload" href="fonts/alumni_sans_semibold.woff" as="font">
+    <link rel="preload" href="fonts/robotocondensed-regular.woff2" as="font">
+    <link rel="preload" href="fonts/robotocondensed-regular.woff" as="font">
+    <link rel="preload" href="fonts/roboto_condensed_light.woff2" as="font">
+    <link rel="preload" href="fonts/roboto_condensed_light.woff" as="font">
+    <link rel="preload" href="fonts/roboto_condensed_bold.woff2" as="font">
+    <link rel="preload" href="fonts/roboto_condensed_bold.woff" as="font">
+    <link rel="preload" href="fonts/alumni_sans_extrabold.woff2" as="font">
+    <link rel="preload" href="fonts/alumni_sans_extrabold.woff" as="font">
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <h1 class="visually-hidden">интернет-сайт ФИТНЕС ЦЕНТР Омск</h1>
+      <header class="header">
+        <div class="header__container container">
+          <div class="header__wrap">
+            <a class="header__logo">SUPERGYM</a>
+            <div class="header__wrapper-tel">
+              <a class="header__tel" href="tel:88005555555">8-800-555-55-55</a>
+            </div>
+          </div>
+          <div class="header__cover">
+            <div class="header__wrapper">
+              <span>омск</span>
+              <div class="header__wrap header__wrap--title">
+                <p>Тренажёрный зал
+                  Групповые занятия
+                  Кардио-зона </p>
+                <h2>ФИТНЕС ЦЕНТР</h2>
+              </div>
+              <button class="header__button" type="button">Купить абонемент</button>
+            </div>
+            <picture>
+              <source srcset="img/main-person.webp 1x, img/main-person@2x.webp 2x" type="image/webp">
+              <img class="header__img" src="img/main-person.jpg" srcset="img/main-person@2x.jpg" alt="изображение спортивного человека" width="500" height="556">
+            </picture>
+          </div>
+        </div>
       </header>
       <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+        <section class="gym">
+          <div class="gym__container container">
+            <div class="gym__wrapper">
+              <h3>Тренажерный зал</h3>
+              <p>Просторный зал площадью 900&nbsp;кв/м</p>
+              <div class="gym__wrap">
+                <p>Supergym&nbsp;&mdash; самый большой фитнес центр
+                  за&nbsp;Уралом и&nbsp;идеальное место для укрепления
+                  тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым
+                  современным оборудованием для всех спортсменов.
+                </p>
+                <div class="gym__wrap--hide">
+                  <p>В&nbsp;зале расположены отдельная зона для
+                    Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами.
+                    Также в&nbsp;фитнес центре есть несколько оборудованных
+                    залов для различных видов групповых занятий.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <picture>
+              <source srcset="img/gym.webp 1x, img/gym@2x.webp 2x" type="image/webp">
+              <img src="img/gym.jpg" srcset="img/gym@2x.jpg" width="660" height="401" alt="изображение фитнес зала">
+            </picture>
+              <div class="gym__video-wrapper">
+                <a class="gym__video-link" href="https://www.youtube.com/embed/9TZXsZItgdw">
+                  <picture>
+                    <source srcset="img/video-preview.webp 1x, img/video-preview@2x.webp 2x" type="image/webp">
+                    <img class="gym__video-img" src="img/video-preview.jpg" srcset="img/video-preview@2x.jpg" width="364" height="228" alt="видео о фитнес зале">
+                  </picture>
+                </a>
+                <button class="gym__video-button" type="button" aria-label="запустить видео"></button>
+              </div>
           </div>
         </section>
       </main>
@@ -29,7 +89,7 @@
       </footer>
     </div>
 
-    <!-- Модалки -->
+    <!-- Модалки
     <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
@@ -56,7 +116,7 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
