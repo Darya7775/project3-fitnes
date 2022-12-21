@@ -5,7 +5,7 @@
 
 .gym__container {
   padding-top: 7.5rem;
-  padding-bottom: 15.1rem;
+  padding-bottom: 14.7rem;
 
   position: relative;
 
@@ -15,7 +15,7 @@
 
   @include vp-1199 {
     padding-top: 6.25rem;
-    padding-bottom: 11.44rem;
+    padding-bottom: 7.3rem;
 
     flex-direction: column;
     align-items: center;
@@ -23,10 +23,10 @@
   }
 
   @include vp-767 {
-    padding-top: 4.38rem;
+    padding-top: 3.9rem;
     padding-bottom: 4.38rem;
 
-    row-gap: 2.5rem;
+    row-gap: 2rem;
   }
 }
 
@@ -69,7 +69,7 @@
     font-size: 2em;
     line-height: 1.19em;
 
-    margin: 0;
+    margin: 0 0 0.4rem;
   }
 }
 
@@ -82,6 +82,10 @@
   @include vp-1199 {
     margin: 0 0 2.1rem;
   }
+
+  @include vp-767 {
+    margin: 0 0 1.45rem;
+  }
 }
 
 .gym__wrap p {
@@ -90,6 +94,10 @@
   line-height: 150%;
 
   margin: 0 0 0.4rem;
+
+  @include vp-767 {
+    margin: 0;
+  }
 }
 
 .gym__wrapper-img {
@@ -104,6 +112,7 @@
   @include vp-767 {
     width: calc(100% + 30px);
     min-height: 19.56rem;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -119,7 +128,7 @@
 
 .gym__video-wrapper {
   position: absolute;
-  width: 34.6%;
+  width: 26.6%;
   top: 53.7%;
   left: 39.6%;
   min-height: 14.25rem;
@@ -154,7 +163,13 @@
     left: 0;
 
     width: calc(100% + 30px);
-    min-height: 10.43rem;
+    min-height: 10.4rem;
+  }
+}
+
+.gym__video-wrapper--after {
+  &::after {
+    display: none;
   }
 }
 
@@ -163,13 +178,14 @@
 }
 
 .gym__video-img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   border: none;
 
   @include vp-767 {
-    min-height: 10.43rem;
+    min-height: 10.4rem;
   }
 }
 

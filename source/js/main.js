@@ -26,8 +26,10 @@ window.addEventListener('DOMContentLoaded', () => {
     const iframe = document.createElement('iframe');
     iframe.setAttribute('src', 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1');
     iframe.setAttribute('allowfullscreen', '');
+    iframe.setAttribute('allow', 'autoplay');
     iframe.classList.add('gym__video-img');
-    iframe.style.zIndex = '2';
+
+    gymVideo.classList.add('gym__video-wrapper--after');
 
     gymLink.remove();
     gymButton.remove();
@@ -46,6 +48,41 @@ window.addEventListener('DOMContentLoaded', () => {
   };
   breakpoint.addEventListener('change', deletePgym);
   deletePgym();
+
+  // subscription
+
+  const tabs = document.querySelectorAll('input[type=radio]');
+  const tabsList = document.querySelectorAll('.subscription__tabs-list');
+
+  for (let i = 0; i < tabsList.length; i++) {
+    tabsList[i].style.display = 'none';
+  }
+
+  tabs.forEach((tab) => {
+    if (tab.getAttribute('checked') === '') {
+      for (let i = 0; i < tabsList.length; i++) {
+        if (tabsList[i].classList.contains(tab.getAttribute('id'))) {
+          tabsList[i].style.display = 'flex';
+        }
+      }
+    }
+  });
+
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      const idTab = tab.getAttribute('id');
+
+      for (let i = 0; i < tabsList.length; i++) {
+        tabsList[i].style.display = 'none';
+      }
+
+      for (let i = 0; i < tabsList.length; i++) {
+        if (tabsList[i].classList.contains(idTab)) {
+          tabsList[i].style.display = 'flex';
+        }
+      }
+    });
+  });
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
