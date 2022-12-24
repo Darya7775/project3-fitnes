@@ -50,6 +50,12 @@
   }
 }
 
+@mixin vp-1365 {
+  @media (max-width: ($vp-1366 - 0.06em)) {
+    @content;
+  }
+}
+
 @mixin vp-1199 {
   @media (max-width: ($vp-1200 - 0.06em)) {
     @content;
@@ -103,6 +109,36 @@
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
+}
+
+// all
+
+@mixin button {
+  @include RobotoCondensed700;
+  font-size: 0.75em;
+  line-height: 1.17em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+@mixin title {
+  @include AlumniSans600;
+  font-size: 3.38em;
+  line-height: 1.20em;
+  letter-spacing: 0.03em;
+
+  margin: 0;
+
+  @include vp-1199 {
+    font-size: 2.63em;
+    line-height: 1.19em;
+  }
+
+  @include vp-767 {
+    font-size: 2em;
+    line-height: 1.19em;
+  }
 }
 
 // Mobile first

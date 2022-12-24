@@ -11,21 +11,21 @@
 
   @include vp-1199 {
     padding-top: 6.25rem;
+    padding-bottom: 6.2rem;
+  }
 
+  @include vp-767 {
+    padding-top: 4rem;
+    padding-bottom: 4.4rem;
   }
 }
 
 .subscription__container h3 {
+  @include title;
   margin: 0 0 1.1rem;
 
-  @include AlumniSans600;
-  font-size: 3.38em;
-  line-height: 1.20em;
-  letter-spacing: 0.03em;
-
-  @include vp-1199 {
-    font-size: 2.63em;
-    line-height: 1.19em;
+  @include vp-767 {
+    margin: 0 0 1.35rem;
   }
 }
 
@@ -52,6 +52,11 @@
 
     margin-bottom: 2.8rem;
   }
+
+  @include vp-767 {
+    gap: 2.85rem;
+    margin-bottom: 2.1rem;
+  }
 }
 
 .subscription__wrapper label {
@@ -70,6 +75,11 @@
     line-height: 150%;
 
     padding-bottom: 1rem;
+  }
+
+  @include vp-767 {
+    font-size: 1em;
+    line-height: 150%;
   }
 }
 
@@ -120,6 +130,11 @@ input[type=radio]:checked + label::after {
     padding: 0 7.4rem;
     gap: 2.5rem;
   }
+
+  @include vp-767 {
+    padding: 0;
+    gap: 2.3rem;
+  }
 }
 
 .subscription__item {
@@ -149,6 +164,10 @@ input[type=radio]:checked + label::after {
   @include vp-1199 {
     padding: 3.4rem 7rem 4rem;
   }
+
+  @include vp-767 {
+    padding: 2.7rem 2rem 3rem;
+  }
 }
 
 .subscription__item--active {
@@ -156,10 +175,6 @@ input[type=radio]:checked + label::after {
   border-image: linear-gradient(to left top, #00359F, #D10A42);
   border-image-slice: 1;
   padding: 3.46rem 4.46rem 3.81rem;
-
-  &:hover {
-    padding: 3.46rem 4.46rem 3.81rem;
-  }
 
   & .subscription__link {
     color: $color-default-white;
@@ -174,10 +189,19 @@ input[type=radio]:checked + label::after {
   line-height: 1.12em;
 
   margin: 0 0 0.6rem;
+
+  @include vp-767 {
+    font-size: 1.38em;
+    line-height: 110.16%;
+  }
 }
 
 .subscription__text {
   margin-bottom: 4rem;
+
+  @include vp-767 {
+    margin-bottom: 3.3rem;
+  }
 }
 
 .subscription__text span {
@@ -189,6 +213,10 @@ input[type=radio]:checked + label::after {
   z-index: 2;
 
   margin-bottom: 2.3rem;
+
+  @include vp-767 {
+    margin-bottom: 2rem;
+  }
 }
 
 .subscription__price p {
@@ -211,9 +239,22 @@ input[type=radio]:checked + label::after {
     content: "";
     background-image: url("../img/svg/ruble.svg");
     background-repeat: no-repeat;
+    background-size: 100%;
 
     width: 1.88rem;
     height: 2.63rem;
+
+    @include vp-767 {
+      width: 1.5rem;
+      height: 2.06rem;
+    }
+  }
+
+  @include vp-767 {
+    font-size: 3em;
+    line-height: 150%;
+
+    gap: 0.7rem;
   }
 }
 
@@ -233,18 +274,18 @@ input[type=radio]:checked + label::after {
     position: absolute;
     left: 0;
     bottom: -9%;
+
+    @include vp-767 {
+      font-size: 5em;
+      line-height: 150%;
+    }
   }
 }
 
 .subscription__link {
   display: block;
 
-  @include RobotoCondensed700;
-  font-size: 0.75em;
-  line-height: 1.17em;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-
+  @include button;
   outline: 2px solid #102654;
   padding: 1.6rem 2.7rem 1.4rem;
 
@@ -252,5 +293,17 @@ input[type=radio]:checked + label::after {
     color: $color-default-white;
     outline: none;
     background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  }
+
+  @include vp-1365 {
+    padding: 1.6rem 1.5rem 1.4rem;
+  }
+
+  @include vp-1199 {
+    padding: 1.6rem 2.7rem 1.4rem;
+  }
+
+  @include vp-767 {
+    width: 100%;
   }
 }

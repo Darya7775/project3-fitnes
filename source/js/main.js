@@ -1,5 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import Swiper, {Navigation} from 'swiper';
 
 // ---------------------------------
 
@@ -38,12 +39,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const gymPHide = document.querySelector('.gym__wrap--hide');
 
-  const breakpoint = window.matchMedia('(min-width:75em)');
+  const breakpoint = window.matchMedia('(max-width:75em)');
   const deletePgym = () => {
     if (breakpoint.matches) {
-      gymPHide.style.display = 'block';
-    } else {
       gymPHide.style.display = 'none';
+    } else {
+      gymPHide.style.display = 'block';
     }
   };
   breakpoint.addEventListener('change', deletePgym);
@@ -83,6 +84,62 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // trainers
+
+  void new Swiper('.trainer__swiper', {
+    modules: [Navigation],
+    spaceBetween: 40,
+    grabCursor: true,
+    loop: true,
+    navigation: {
+      nextEl: '.trainer__button--next',
+      prevEl: '.trainer__button--prev',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        initialSlide: 2,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        initialSlide: 2,
+      },
+      1200: {
+        slidesPerView: 4,
+      },
+    },
+    a11y: {
+      enebled: true,
+      prevSlideMessage: 'Предыдущий слайд',
+      nextSlideMessage: 'Следующий слайд',
+      firstSlideMessage: 'Первый слайд',
+      lastSlideMessage: 'Послдений слайд',
+      notificationClass: 'swiper-notification',
+    },
+  });
+
+  // reviews
+
+  void new Swiper('.reviews__swiper', {
+    modules: [Navigation],
+    grabCursor: true,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.reviews__button--next',
+      prevEl: '.reviews__button--prev',
+    },
+    a11y: {
+      enebled: true,
+      prevSlideMessage: 'Предыдущий слайд',
+      nextSlideMessage: 'Следующий слайд',
+      firstSlideMessage: 'Первый слайд',
+      lastSlideMessage: 'Послдений слайд',
+      notificationClass: 'swiper-notification',
+    },
+  });
+
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
