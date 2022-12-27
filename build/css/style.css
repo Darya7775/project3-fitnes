@@ -3714,9 +3714,61 @@ input[type=radio]:checked + label::after {
     font-size: 1.19rem;
   }
 
+  .reviews__container {
+    padding-top: 0;
+  }
+
   .reviews__container h2 {
     font-size: 2em;
     line-height: 1.19em;
+  }
+
+  .reviews__container h2 {
+    margin-bottom: 2.65rem;
+  }
+
+  .reviews__swiper {
+    width: 77.6%;
+  }
+
+  .reviews__item {
+    -ms-grid-columns: 5.1rem 1fr;
+    grid-template-columns: 5.1rem 1fr;
+    -ms-grid-rows: 4.25rem -webkit-min-content;
+    -ms-grid-rows: 4.25rem min-content;
+    grid-template-rows: 4.25rem -webkit-min-content;
+    grid-template-rows: 4.25rem min-content;
+    padding: 2rem 1.7rem 2rem;
+    -webkit-column-gap: 0.95rem;
+    -moz-column-gap: 0.95rem;
+    column-gap: 0.95rem;
+    row-gap: 1.3rem;
+  }
+
+  .reviews__item picture {
+    margin-left: 0.8rem;
+  }
+
+  .reviews__item h3 {
+    margin-top: 0.9rem;
+    line-height: 140%;
+  }
+
+  .reviews__item p {
+    grid-area: 2/1/-1/-1;
+    text-align: center;
+  }
+
+  .reviews__button {
+    top: 53.5%;
+  }
+
+  .reviews__button--prev {
+    left: 9px;
+  }
+
+  .reviews__button--next {
+    right: 16px;
   }
 
   .benefits__container {
@@ -3829,6 +3881,25 @@ input[type=radio]:checked + label::after {
     grid-area: auto;
   }
 
+  .stock__cover--two,
+  .stock__cover--three {
+    padding: 2rem 1.8rem 2.5rem;
+  }
+
+  .stock__cover {
+    text-align: center;
+  }
+
+  .stock__cover p {
+    margin-bottom: 1.6rem;
+  }
+
+  .stock__link {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
   .stock__wrap {
     text-align: center;
     padding: 2.1rem 2.5rem 2.7rem 2.5rem;
@@ -3840,6 +3911,10 @@ input[type=radio]:checked + label::after {
 
   .stock__wrap p {
     margin: 0 0 1.6rem;
+  }
+
+  .stock__img {
+    aspect-ratio: 1/1.03;
   }
 }
 

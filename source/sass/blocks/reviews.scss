@@ -17,7 +17,7 @@
   }
 
   @include vp-767 {
-
+    padding-top: 0;
   }
 }
 
@@ -29,6 +29,10 @@
   @include vp-1199 {
     margin-bottom: 2.5rem;
   }
+
+  @include vp-767 {
+    margin-bottom: 2.65rem;
+  }
 }
 
 .reviews__swiper {
@@ -36,6 +40,10 @@
 
   @include vp-1199 {
     width: 83.6%;
+  }
+
+  @include vp-767 {
+    width: 77.6%;
   }
 }
 
@@ -59,12 +67,24 @@
   @include vp-1199 {
     padding: 3.4rem 3.88rem 3.5rem 4.1rem;
   }
+
+  @include vp-767 {
+    grid-template-columns: 5.1rem 1fr;
+    grid-template-rows: 4.25rem min-content;
+    padding: 2rem 1.7rem 2rem;
+    column-gap: 0.95rem;
+    row-gap: 1.3rem;
+  }
 }
 
 .reviews__item picture {
   grid-area: 1/1/-1/2;
   align-self: flex-start;
   margin-top: 0.5rem;
+
+  @include vp-767 {
+    margin-left: 0.8rem;
+  }
 }
 
 .reviews__img {
@@ -80,6 +100,11 @@
   line-height: 150%;
 
   margin: 0;
+
+  @include vp-767 {
+    margin-top: 0.9rem;
+    line-height: 140%;
+  }
 }
 
 .reviews__item p {
@@ -87,6 +112,11 @@
 
   line-height: 140%;
   margin: 0;
+
+  @include vp-767 {
+    grid-area: 2/1/-1/-1;
+    text-align: center;
+  }
 }
 
 .reviews__button {
@@ -104,6 +134,10 @@
   @include vp-1199 {
     top: 57.8%;
   }
+
+  @include vp-767 {
+    top: 53.5%;
+  }
 }
 
 .reviews__button--prev {
@@ -112,6 +146,10 @@
   @include vp-1199 {
     left: 38px;
   }
+
+  @include vp-767 {
+    left: 9px;
+  }
 }
 
 .reviews__button--next {
@@ -119,5 +157,9 @@
 
   @include vp-1199 {
     right: 51px;
+  }
+
+  @include vp-767 {
+    right: 16px;
   }
 }
