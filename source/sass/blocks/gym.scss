@@ -15,7 +15,7 @@
 
   @include vp-1199 {
     padding-top: 6.25rem;
-    padding-bottom: 7.3rem;
+    padding-bottom: 11.3rem;
 
     flex-direction: column;
     align-items: center;
@@ -102,16 +102,19 @@
 
 .gym__wrapper-img {
   width: 57%;
-  min-height: 25.1rem;
+  height: 0;
+  padding-bottom: 34.5%;
+  position: relative;
 
   @include vp-1199 {
     width: 100%;
-    min-height: 21.56rem;
+    height: 0;
+    padding-bottom: 51%;
   }
 
   @include vp-767 {
     width: calc(100% + 30px);
-    min-height: 19.56rem;
+    padding-bottom: 108%;
     margin-bottom: 0.5rem;
   }
 }
@@ -120,10 +123,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-
-  @include vp-767 {
-    min-height: 19.56rem;
-  }
+  position: absolute;
 }
 
 .gym__video-wrapper {
@@ -131,7 +131,8 @@
   width: 26.6%;
   top: 53.7%;
   left: 39.6%;
-  min-height: 14.25rem;
+  height: 0;
+  padding-bottom: 16.8%;
   background-color: #000000;
 
   &::after {
@@ -152,9 +153,9 @@
 
   @include vp-1199 {
     width: 34.6%;
-    min-height: 10.44rem;
-    top: 63.8%;
+    top: 68.8%;
     left: 32.7%;
+    padding-bottom: 21.7%;
   }
 
   @include vp-767 {
@@ -163,7 +164,7 @@
     left: 0;
 
     width: calc(100% + 30px);
-    min-height: 10.4rem;
+    padding-bottom: 58%;
   }
 }
 
@@ -183,10 +184,7 @@
   height: 100%;
   object-fit: cover;
   border: none;
-
-  @include vp-767 {
-    min-height: 10.4rem;
-  }
+  position: absolute;
 }
 
 .gym__video-button {
