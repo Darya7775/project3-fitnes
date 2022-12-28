@@ -140,6 +140,69 @@ window.addEventListener('DOMContentLoaded', () => {
     },
   });
 
+  // contacts
+
+  const telephones = document.querySelectorAll('input[type="tel"]');
+
+  const prefixNumber = (str) => {
+    if (str === '7') {
+      return '7 (';
+    }
+    if (str === '8') {
+      return '7 (';
+    }
+    if (str === '9') {
+      return '7 (';
+    }
+    return '7 (';
+  };
+
+  // ---------------
+  for (let i = 0; i < telephones.length; i++) {
+    telephones[i].addEventListener('input', () => {
+      const value = telephones[i].value.replace(/\D+/g, '');
+      const numberLength = 11;
+
+      let result;
+      if (telephones[i].value.includes('+8') || telephones[i].value[0] === '8') {
+        result = '';
+      } else {
+        result = '+';
+      }
+
+      //
+      for (let j = 0; j < value.length && j < numberLength; j++) {
+        switch (j) {
+          case 0:
+            result += prefixNumber(value[i]);
+            continue;
+          case 4:
+            result += ') ';
+            break;
+          case 7:
+            result += '-';
+            break;
+          case 9:
+            result += '-';
+            break;
+          default:
+            break;
+        }
+        result += value[j];
+      }
+      //
+      telephones[i].value = result;
+    });
+  }
+
+  const form = document.querySelector('#form');
+
+  form.addEventListener('submit', (e) => {
+    if (telephones[0].value.length < 18) {
+      e.preventDefault();
+      telephones[0].style.boxShadow = '0 0 0 5px #ffffff';
+    }
+  });
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

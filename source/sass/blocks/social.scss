@@ -1,0 +1,30 @@
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  column-gap: 0.69rem;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background-color: $color-default-white;
+  border-radius: 50%;
+
+  @include hover-focus {
+    background-color: #102654;
+  }
+}
+
+.social__link svg {
+  fill: #030a1a;
+}
+
+.social__link:hover svg {
+  fill: $color-default-white;
+}

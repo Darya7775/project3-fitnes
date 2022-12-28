@@ -1,0 +1,69 @@
+.footer {
+  width: 100%;
+  background-color: #030a1a;
+}
+
+.footter__container {
+  padding-top: 2.1rem;
+  padding-bottom: 2.63rem;
+
+  display: flex;
+  justify-content: space-between;
+
+  @include vp-1199 {
+    padding-top: 2.6rem;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+}
+
+.footter__logo {
+  @include  AlumniSans600;
+  font-size: 1.63em;
+  line-height: 1.94em;
+  letter-spacing: 0.02em;
+  color: $color-default-white;
+
+  user-select: none;
+
+  @include vp-1199 {
+    font-size: 1.5em;
+    line-height: 1.21em;
+  }
+}
+
+.footter__list {
+  margin: 0 0 0.7rem 0.5rem;
+  padding: 0;
+  list-style: none;
+  align-self: center;
+
+  display: flex;
+  column-gap: 2.5rem;
+
+  @include vp-1199 {
+    column-gap: 1.87rem;
+    margin: 0 0 0 1rem;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+}
+
+.footter__link {
+  font-size: 0.88em;
+  line-height: 1.14em;
+  color: $color-default-white;
+  user-select: none;
+
+  @include hover-focus {
+    opacity: 0.7;
+  }
+}
+
+.footter__social {
+  align-self: center;
+}
