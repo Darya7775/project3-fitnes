@@ -163,11 +163,9 @@
   @include RobotoCondensed700;
   font-size: 4.44em;
   line-height: 76%;
-  background: linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
   background-clip: text;
-  text-fill-color: transparent;
+  color: transparent;
 
   @include vp-1199 {
     font-size: 3.63em;
@@ -196,9 +194,7 @@
   @include RobotoCondensed400;
   font-size: 0.88em;
   line-height: 150%;
-  color: #2E35AC;
-  -webkit-text-fill-color: #2E35AC;
-  text-fill-color: #2E35AC;
+  color: #2e35ac;
 
   @include vp-1199 {
     font-size: 0.88em;
@@ -207,8 +203,7 @@
 }
 
 .benefits__item--three span {
-  -webkit-text-fill-color: $color-default-white;
-  text-fill-color: $color-default-white;
+  color: $color-default-white;
 
   margin-bottom: 0.8rem;
   margin-left: 0;

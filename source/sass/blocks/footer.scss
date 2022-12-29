@@ -3,7 +3,7 @@
   background-color: #030a1a;
 }
 
-.footter__container {
+.footer__container {
   padding-top: 2.1rem;
   padding-bottom: 2.63rem;
 
@@ -15,12 +15,20 @@
   }
 
   @include vp-767 {
-    flex-direction: column;
+    padding-top: 2.8rem;
+    padding-bottom: 3.2rem;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr auto;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.9rem;
+    column-gap: 1.9rem;
+    grid-auto-flow: column;
   }
 }
 
-.footter__logo {
-  @include  AlumniSans600;
+.footer__logo {
+  @include AlumniSans600;
   font-size: 1.63em;
   line-height: 1.94em;
   letter-spacing: 0.02em;
@@ -32,9 +40,14 @@
     font-size: 1.5em;
     line-height: 1.21em;
   }
+
+  @include vp-767 {
+    font-size: 1.25em;
+    line-height: 1.2em;
+  }
 }
 
-.footter__list {
+.footer__list {
   margin: 0 0 0.7rem 0.5rem;
   padding: 0;
   list-style: none;
@@ -49,11 +62,12 @@
   }
 
   @include vp-767 {
-    flex-direction: column;
+    /* autoprefixer: ignore next */
+    display: contents;
   }
 }
 
-.footter__link {
+.footer__link {
   font-size: 0.88em;
   line-height: 1.14em;
   color: $color-default-white;
@@ -62,8 +76,18 @@
   @include hover-focus {
     opacity: 0.7;
   }
+
+  @include vp-767 {
+    font-size: 1em;
+    line-height: 1.18em;
+  }
 }
 
-.footter__social {
+.footer__social {
   align-self: center;
+
+  @include vp-767 {
+    grid-area: 4/1/-1/-1;
+    margin-top: 1.4rem;
+  }
 }

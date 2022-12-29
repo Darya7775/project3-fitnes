@@ -174,13 +174,13 @@
     position: absolute;
     left: 50.6%;
     top: 73%;
-    transform: translate(-73%,-50.6%);
+    transform: translate(-73%, -50.6%);
 
     @include vp-1199 {
       height: 127px;
       left: 52.4%;
       top: 62%;
-      transform: translate(-62%,-52.4%);
+      transform: translate(-62%, -52.4%);
     }
 
     @include vp-767 {

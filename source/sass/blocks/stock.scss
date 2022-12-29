@@ -90,7 +90,7 @@
 .stock__cover--two,
 .stock__cover--three {
   border: 7px solid;
-  border-image: linear-gradient(to left top,#00359f,#d10a42);
+  border-image: linear-gradient(to left top, #00359f, #d10a42);
   border-image-slice: 1;
 
   display: flex;
@@ -141,7 +141,7 @@
 }
 
 .stock__link {
-  display: inline-block;
+  display: inline-flex;
   color: #1c3374;
 
   @include RobotoCondensed700;
@@ -149,7 +149,7 @@
   line-height: 1.17em;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  border-bottom: 1px solid #1C3374;
+  border-bottom: 1px solid #1c3374;
   user-select: none;
   align-self: flex-start;
 

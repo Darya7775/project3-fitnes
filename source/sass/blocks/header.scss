@@ -1,142 +1,142 @@
 .header {
-    width: 100%;
-    background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);;
+  width: 100%;
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 }
 
 .header__container {
-    padding-top: 1.88rem;
-    padding-bottom: 1.8rem;
+  padding-top: 1.88rem;
+  padding-bottom: 1.8rem;
 
-    color: $color-default-white;
+  color: $color-default-white;
 
-    @include vp-1199 {
-        padding-top: 2.2rem;
-        padding-bottom: 5.13rem;
-    }
+  @include vp-1199 {
+    padding-top: 2.2rem;
+    padding-bottom: 5.13rem;
+  }
 
-    @include vp-767 {
-        padding-top: 0.94rem;
-        padding-bottom: 4.9rem;
-    }
+  @include vp-767 {
+    padding-top: 0.94rem;
+    padding-bottom: 4.9rem;
+  }
 }
 
 .header__logo {
-    @include AlumniSans600;
-    font-size: 2.25em;
-    line-height: 1.19em;
-    letter-spacing: 0.02em;
-    color: $color-default-white;
+  @include AlumniSans600;
+  font-size: 2.25em;
+  line-height: 1.19em;
+  letter-spacing: 0.02em;
+  color: $color-default-white;
 
-    align-self: flex-start;
+  align-self: flex-start;
 
-    @include vp-1199 {
-        font-size: 1.5em;
-        line-height: 1.21em;
-    }
+  @include vp-1199 {
+    font-size: 1.5em;
+    line-height: 1.21em;
+  }
 
-    @include vp-767 {
-        font-size: 1.25em;
-        line-height: 1.2em;
-    }
+  @include vp-767 {
+    font-size: 1.25em;
+    line-height: 1.2em;
+  }
 }
 
 .header__wrapper-tel {
-    display: flex;
-    align-self: flex-start;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    column-gap: 2rem;
-    row-gap: 1rem;
+  display: flex;
+  align-self: flex-start;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 1rem;
 
-    margin-left: 2rem;
-    position: relative;
-    z-index: 2;
+  margin-left: 2rem;
+  position: relative;
+  z-index: 2;
 }
 
 .header__tel {
-    @include AlumniSans600;
-    font-size: 1.63em;
+  @include AlumniSans600;
+  font-size: 1.63em;
+  line-height: 1.2em;
+  letter-spacing: 0.03em;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    font-size: 1.5em;
+    line-height: 1.21em;
+    letter-spacing: 0.02em;
+  }
+
+  @include vp-767 {
+    font-size: 1.25em;
     line-height: 1.2em;
-    letter-spacing: 0.03em;
-    color: $color-default-white;
-
-    @include vp-1199 {
-        font-size: 1.5em;
-        line-height: 1.21em;
-        letter-spacing: 0.02em;
-    }
-
-    @include vp-767 {
-      font-size: 1.25em;
-      line-height: 1.2em;
-    }
+  }
 }
 
 .header__cover {
-    display: flex;
-    column-gap: 3.83rem;
-    justify-content: space-around;
+  display: flex;
+  column-gap: 3.83rem;
+  justify-content: space-around;
 
-    @include vp-1439 {
-      justify-content: flex-start;
-    }
+  @include vp-1439 {
+    justify-content: flex-start;
+  }
 
-    @include vp-1199 {
-      justify-content: center;
-      column-gap: 1.7rem;
+  @include vp-1199 {
+    justify-content: center;
+    column-gap: 1.7rem;
 
-      margin-top: 1.1rem;
-    }
+    margin-top: 1.1rem;
+  }
 
-    @include vp-767 {
-      column-gap: 0;
-    }
+  @include vp-767 {
+    column-gap: 0;
+  }
 }
 
 .header__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 
-    padding: 5.5rem 0 0 1.2rem;
+  padding: 5.5rem 0 0 1.2rem;
 
-    @include vp-1199 {
-        padding: 3.1rem 0 0;
-    }
+  @include vp-1199 {
+    padding: 3.1rem 0 0;
+  }
 
-    @include vp-767 {
-      width: 100%;
-      padding: 3.2rem 0 0;
-    }
+  @include vp-767 {
+    width: 100%;
+    padding: 3.2rem 0 0;
+  }
 }
 
 .header__wrapper span {
-    @include AlumniSans600;
-    font-size: 3em;
+  @include AlumniSans600;
+  font-size: 3em;
+  line-height: 1.21em;
+  letter-spacing: 0.03em;
+
+  margin: 0 3.3rem 1rem 0;
+
+  @include vp-1199 {
+    font-size: 2.13em;
     line-height: 1.21em;
-    letter-spacing: 0.03em;
 
-    margin: 0 3.3rem 1rem 0;
+    margin: 0 0.4rem 0.3rem 0;
+  }
 
-    @include vp-1199 {
-        font-size: 2.13em;
-        line-height: 1.21em;
+  @include vp-767 {
+    font-size: 1.75em;
+    line-height: 1.21em;
 
-        margin: 0 0.4rem 0.3rem 0;
-    }
-
-    @include vp-767 {
-      font-size: 1.75em;
-      line-height: 1.21em;
-
-      margin: 0 0.2rem 0.8rem 0;
-    }
+    margin: 0 0.2rem 0.8rem 0;
+  }
 }
 
 .header__wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .header__wrap--title {
@@ -147,90 +147,89 @@
 }
 
 .header__wrap h2 {
-    @include AlumniSans800;
-    font-size: 5.75em;
-    line-height: 1.2em;
-    letter-spacing: 0.05em;
+  @include AlumniSans800;
+  font-size: 5.75em;
+  line-height: 1.2em;
+  letter-spacing: 0.05em;
 
-    width: 16.6rem;
-    margin: 0 0 3rem;
-    padding: 0;
-    text-align: end;
+  width: 16.6rem;
+  margin: 0 0 3rem;
+  padding: 0;
+  text-align: end;
 
-    @include vp-1199 {
-      font-size: 4.91em;
-      line-height: 1.1em;
-      letter-spacing: 0;
-      text-transform: lowercase;
+  @include vp-1199 {
+    font-size: 4.91em;
+    line-height: 1.1em;
+    letter-spacing: 0;
+    text-transform: lowercase;
 
-      width: 13.3rem;
-      margin: 0 0 2.4rem;
-      padding-right: 0.25rem;
-    }
+    width: 13.3rem;
+    margin: 0 0 2.4rem;
+    padding-right: 0.25rem;
+  }
 
-    @include vp-767 {
-      width: 70%;
-      margin: 0 0 1.4rem;
-    }
+  @include vp-767 {
+    width: 70%;
+    margin: 0 0 1.4rem;
+  }
 }
 
 .header__wrap p {
-    font-size: 0.88em;
-    line-height: 150%;
+  font-size: 0.88em;
+  line-height: 150%;
 
-    width: 7.08rem;
-    text-align: end;
-    margin: 0 0 5.3rem;
+  width: 7.08rem;
+  text-align: end;
+  margin: 0 0 5.3rem;
 
-    @include vp-1199 {
-      margin: 0 0 3.6rem;
-    }
+  @include vp-1199 {
+    margin: 0 0 3.6rem;
+  }
 
-    @include vp-767 {
-      position: absolute;
-      left: 15px;
+  @include vp-767 {
+    position: absolute;
+    left: 15px;
 
-      margin: 0 0 3.4rem;
-    }
+    margin: 0 0 3.4rem;
+  }
 }
 
 .header__button {
-    @include button;
-    color: $color-default-white;
+  @include button;
+  color: $color-default-white;
 
+  border: 4px solid $color-default-white;
+  background-color: inherit;
+  padding: 1.2rem 3.5rem;
 
-    border: 4px solid #FFFFFF;
-    background-color: inherit;
-    padding: 1.2rem 3.5rem;
+  cursor: pointer;
 
-    cursor: pointer;
+  @include hover-focus {
+    opacity: 0.7;
+  }
 
-    @include hover-focus {
-        opacity: 0.7;
-      }
+  @include vp-1199 {
+    padding: 1.3rem 2rem;
+  }
 
-    @include vp-1199 {
-      padding: 1.3rem 2rem;
-    }
-
-    @include vp-767 {
-      width: 100%;
-    }
+  @include vp-767 {
+    width: 100%;
+  }
 }
 
 .header__img {
   object-fit: cover;
-    position: relative;
-    top: -21px;
+  position: relative;
+  top: -21px;
 
-    @include vp-1199 {
-        width: 100%;
-        min-height: 24.38rem;
+  @include vp-1199 {
+    width: 100%;
+    min-height: 24.38rem;
 
-        position: static;
-    }
+    position: static;
+  }
 
-    @include vp-767 {
-      display: none;
-    }
+  @include vp-767 {
+    display: none;
+  }
 }
