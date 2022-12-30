@@ -67,6 +67,16 @@
     }
   }
 
+  &:focus {
+    .trainer__wrapper {
+      z-index: 1;
+    }
+
+    span {
+      opacity: 0;
+    }
+  }
+
   @include vp-1199 {
     height: 100%;
   }
@@ -205,7 +215,7 @@
 
 .trainer__button {
   position: absolute;
-  top: 63%;
+  top: 58%;
   width: 16px;
   height: 32px;
 

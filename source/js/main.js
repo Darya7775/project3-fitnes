@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import Swiper, {Navigation} from 'swiper';
+import Swiper, {Navigation, Keyboard} from 'swiper';
 
 // ---------------------------------
 
@@ -63,7 +63,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (tab.getAttribute('checked') === '') {
       for (let i = 0; i < tabsList.length; i++) {
         if (tabsList[i].classList.contains(tab.getAttribute('id'))) {
-          tabsList[i].style.display = 'flex';
+          tabsList[i].style.display = 'grid';
         }
       }
     }
@@ -79,7 +79,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
       for (let i = 0; i < tabsList.length; i++) {
         if (tabsList[i].classList.contains(idTab)) {
-          tabsList[i].style.display = 'flex';
+          tabsList[i].style.display = 'grid';
         }
       }
     });
@@ -88,7 +88,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // trainers
 
   void new Swiper('.trainer__swiper', {
-    modules: [Navigation],
+    modules: [Navigation, Keyboard],
     spaceBetween: 40,
     grabCursor: true,
     loop: true,
@@ -110,6 +110,11 @@ window.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 4,
       },
     },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+      pageUpDown: true,
+    },
     a11y: {
       enebled: true,
       prevSlideMessage: 'Предыдущий слайд',
@@ -119,6 +124,12 @@ window.addEventListener('DOMContentLoaded', () => {
       notificationClass: 'swiper-notification',
     },
   });
+
+  const slides = document.querySelectorAll('.trainer__item');
+
+  for (let i = 0; i < 4; i++) {
+    slides[i].removeAttribute('tabindex');
+  }
 
   // reviews
 

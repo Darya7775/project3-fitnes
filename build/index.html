@@ -41,7 +41,8 @@
               <button class="header__button" type="button">Купить абонемент</button>
             </div>
             <picture>
-              <source srcset="img/main-person.webp 1x, img/main-person@2x.webp 2x" type="image/webp">
+              <source media="(max-width: 75em)" srcset="img/main-person-tablet.webp 1x, img/main-person-tablet@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 75em)" srcset="img/main-person.webp 1x, img/main-person@2x.webp 2x" type="image/webp">
               <img class="header__img" src="img/main-person.jpg" srcset="img/main-person@2x.jpg" alt="изображение спортивного человека" width="500" height="556">
             </picture>
           </div>
@@ -70,14 +71,16 @@
             </div>
             <div class="gym__wrapper-img">
               <picture>
-                <source srcset="img/gym.webp 1x, img/gym@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 47.9em)" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x" type="image/webp">
+                <source media="(max-width: 75em)" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 75em)" srcset="img/gym.webp 1x, img/gym@2x.webp 2x" type="image/webp">
                 <img class="gym__img" src="img/gym.jpg" srcset="img/gym@2x.jpg" width="660" height="401" alt="изображение фитнес зала">
               </picture>
             </div>
               <div class="gym__video-wrapper">
                 <a class="gym__video-link" href="https://www.youtube.com/embed/9TZXsZItgdw">
                   <picture>
-                    <source srcset="img/video-preview.webp 1x, img/video-preview@2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 75em)" srcset="img/video-preview.webp 1x, img/video-preview@2x.webp 2x" type="image/webp">
                     <img class="gym__video-img" src="img/video-preview.jpg" srcset="img/video-preview@2x.jpg" width="364" height="228" alt="видео о фитнес зале">
                   </picture>
                 </a>
@@ -97,7 +100,7 @@
               <label for="tab-three">12&nbsp;месяцев</label>
             </div>
             <ul class="subscription__tabs-list tab-one">
-              <li class="subscription__item">
+              <li class="subscription__item" tabindex="0">
                   <h4>С&nbsp;тренером</h4>
                 <div class="subscription__text">
                   <span>12&nbsp;занятий</span>
@@ -110,7 +113,7 @@
                 </div>
                 <a class="subscription__link" href="#">купить абонемент</a>
               </li>
-              <li class="subscription__item subscription__item--active">
+              <li class="subscription__item subscription__item--active" tabindex="0">
                 <h4>Дневной</h4>
                 <div class="subscription__text">
                   <span>с&nbsp;8:00 до&nbsp;17:00</span>
@@ -123,7 +126,7 @@
                 </div>
                 <a class="subscription__link" href="#">купить абонемент</a>
               </li>
-              <li class="subscription__item">
+              <li class="subscription__item" tabindex="0">
                 <h4>Полный день</h4>
                 <div class="subscription__text">
                   <span>с&nbsp;8:00 до&nbsp;22:00</span>
@@ -138,7 +141,7 @@
               </li>
             </ul>
             <ul class="subscription__tabs-list tab-two">
-              <li class="subscription__item">
+              <li class="subscription__item" tabindex="0">
                   <h4>С&nbsp;тренером</h4>
                 <div class="subscription__text">
                   <span>72&nbsp;занятия</span>
@@ -151,7 +154,7 @@
                 </div>
                 <a class="subscription__link" href="#">купить абонемент</a>
               </li>
-              <li class="subscription__item">
+              <li class="subscription__item" tabindex="0">
                 <h4>Дневной</h4>
                 <div class="subscription__text">
                   <span>с&nbsp;8:00 до&nbsp;17:00</span>
@@ -164,7 +167,7 @@
                 </div>
                 <a class="subscription__link" href="#">купить абонемент</a>
               </li>
-              <li class="subscription__item">
+              <li class="subscription__item" tabindex="0">
                 <h4>Полный день</h4>
                 <div class="subscription__text">
                   <span>с&nbsp;8:00 до&nbsp;22:00</span>
@@ -179,7 +182,7 @@
               </li>
             </ul>
             <ul class="subscription__tabs-list tab-three">
-              <li class="subscription__item">
+              <li class="subscription__item" tabindex="0">
                   <h4>С&nbsp;тренером</h4>
                 <div class="subscription__text">
                   <span>144&nbsp;занятия</span>
@@ -192,7 +195,7 @@
                 </div>
                 <a class="subscription__link" href="#">купить абонемент</a>
               </li>
-              <li class="subscription__item">
+              <li class="subscription__item" tabindex="0">
                 <h4>Дневной</h4>
                 <div class="subscription__text">
                   <span>с&nbsp;8:00 до&nbsp;17:00</span>
@@ -205,7 +208,7 @@
                 </div>
                 <a class="subscription__link" href="#">купить абонемент</a>
               </li>
-              <li class="subscription__item">
+              <li class="subscription__item" tabindex="0">
                 <h4>Полный день</h4>
                 <div class="subscription__text">
                   <span>с&nbsp;8:00 до&nbsp;22:00</span>
@@ -240,10 +243,6 @@
               <a class="super-games__link" href="#">заполнить заявку</a>
             </div>
             <div class="super-games__wrapper-img">
-              <picture>
-                <source srcset="img/super-games-img.webp 1x, img/super-games-img@2x.webp 2x" type="image/webp">
-                <img class="super-games__img" src="img/super-games-img.jpg" srcset="img/super-games-img@2x.jpg" width="660" height="500" alt="спортсмен">
-              </picture>
             </div>
           </div>
         </section>
@@ -252,7 +251,7 @@
             <h2>Тренеры</h2>
             <div class="trainer__swiper swiper">
               <ul class="trainer__list swiper-wrapper">
-                <li class="trainer__item swiper-slide">
+                <li class="trainer__item swiper-slide" tabindex="0">
                   <div class="trainer__wrapper">
                     <h3>Анна Павлова</h3>
                     <p>CrossFit</p>
@@ -268,7 +267,7 @@
                   </picture>
                   <span>Анна Павлова</span>
                 </li>
-                <li class="trainer__item swiper-slide">
+                <li class="trainer__item swiper-slide" tabindex="0">
                   <div class="trainer__wrapper">
                     <h3>Алексей Лавров</h3>
                     <p>CrossFit</p>
@@ -284,7 +283,7 @@
                   </picture>
                   <span>Алексей Лавров</span>
                 </li>
-                <li class="trainer__item trainer__item--active swiper-slide">
+                <li class="trainer__item trainer__item--active swiper-slide" tabindex="0">
                   <div class="trainer__wrapper">
                     <h3>Александр Пашков</h3>
                     <p>CrossFit</p>
@@ -300,7 +299,7 @@
                   </picture>
                   <span>Александр Пашков</span>
                 </li>
-                <li class="trainer__item swiper-slide">
+                <li class="trainer__item swiper-slide" tabindex="0">
                   <div class="trainer__wrapper">
                     <h3>Мария Кетова</h3>
                     <p>CrossFit</p>
@@ -316,7 +315,7 @@
                   </picture>
                   <span>Мария Кетова</span>
                 </li>
-                <li class="trainer__item swiper-slide">
+                <li class="trainer__item swiper-slide" tabindex="0">
                   <div class="trainer__wrapper">
                     <h3>Анна Павлова</h3>
                     <p>CrossFit</p>
@@ -332,7 +331,7 @@
                   </picture>
                   <span>Анна Павлова</span>
                 </li>
-                <li class="trainer__item swiper-slide">
+                <li class="trainer__item swiper-slide" tabindex="0">
                   <div class="trainer__wrapper">
                     <h3>Алексей Лавров</h3>
                     <p>CrossFit</p>
@@ -348,7 +347,7 @@
                   </picture>
                   <span>Алексей Лавров</span>
                 </li>
-                <li class="trainer__item swiper-slide">
+                <li class="trainer__item swiper-slide" tabindex="0">
                   <div class="trainer__wrapper">
                     <h3>Александр Пашков</h3>
                     <p>CrossFit</p>
@@ -364,7 +363,7 @@
                   </picture>
                   <span>Александр Пашков</span>
                 </li>
-                <li class="trainer__item swiper-slide">
+                <li class="trainer__item swiper-slide" tabindex="0">
                   <div class="trainer__wrapper">
                     <h3>Мария Кетова</h3>
                     <p>CrossFit</p>
@@ -434,10 +433,10 @@
                   <a class="stock__link" href="#">подробнее</a>
                 </div>
                 <div class="stock__wrapper-img">
-                  <picture>
+                  <!-- <picture>
                     <source srcset="img/stock-img.webp 1x, img/stock-img@2x.webp 2x" type="image/webp">
                     <img class="stock__img" src="img/stock-img.jpg" srcset="img/stock-img@2x.jpg" width="399" height="462" alt="спортивная девушка">
-                  </picture>
+                  </picture> -->
                 </div>
               </div>
               <div class="stock__cover stock__cover--two">
@@ -477,12 +476,7 @@
                     <img class="reviews__img" src="img/reviews-img.png" srcset="img/reviews-img@2x.png" width="80" height="80" alt="фото написавшего отзыв">
                   </picture>
                   <h3>Галина Орлова</h3>
-                  <p>&laquo;Хожу в&nbsp;SuperClub
-                    уже больше года. Нравится, что
-                    в&nbsp;клубе всегда чисто, тренажеры
-                    обновляют, персонал дружелюбный. Зал
-                    просторный, даже в&nbsp;вечернее время
-                    нет очередей&raquo;</p>
+                  <p>Отличный зал, рекомендую!</p>
                 </li>
               </ul>
             </div>

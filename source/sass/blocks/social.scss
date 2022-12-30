@@ -5,6 +5,8 @@
 
   display: flex;
   column-gap: 0.69rem;
+  row-gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .social__link {

@@ -58,6 +58,7 @@
   background-color: #1c3374;
   color: $color-default-white;
   padding: 3.4rem 3.88rem 3.5rem;
+  height: auto;
 
   display: grid;
   grid-template-columns: 5rem 1fr;
@@ -128,6 +129,7 @@
 
   width: 1rem;
   height: 2rem;
+  padding: 0;
 
   position: absolute;
 

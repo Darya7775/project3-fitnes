@@ -31,10 +31,14 @@
 }
 
 .gym__wrapper {
-  width: 26.19rem;
+  width: 41.19rem;
 
   padding-top: 2.38rem;
   padding-left: 3.75rem;
+
+  @include vp-1919 {
+    width: 26.19rem;
+  }
 
   @include vp-1199 {
     width: 33.38rem;
@@ -131,7 +135,7 @@
 .gym__video-wrapper {
   position: absolute;
   width: 26.6%;
-  top: 53.7%;
+  top: 54%;
   left: 39.6%;
   height: 0;
   padding-bottom: 16.8%;
@@ -151,6 +155,10 @@
 
   &:hover .gym__video-button {
     opacity: 0.8;
+  }
+
+  @include vp-1365 {
+    left: 44.6%;
   }
 
   @include vp-1199 {
@@ -206,6 +214,22 @@
 
   display: none;
 
+  &::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/svg/box-shadow-play.svg");
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: -55%;
+    left: -55%;
+    right: 0;
+    bottom: 0;
+    transform: translate(25%, 25%);
+    z-index: -1;
+  }
+
   &::after {
     content: "";
     background-image: url("../img/svg/play.svg");
@@ -217,6 +241,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-25%, -50%);
+    z-index: 1;
   }
 
   &:focus {
@@ -232,6 +257,13 @@
       height: 12px;
 
       background-image: url("../img/svg/play-tablet.svg");
+    }
+
+    &::before {
+      width: 72px;
+      height: 72px;
+
+      background-image: url("../img/svg/box-shadow-play-tablet.svg");
     }
   }
 }
