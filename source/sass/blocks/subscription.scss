@@ -58,7 +58,7 @@
   }
 
   @include vp-767 {
-    padding-top: 4rem;
+    padding-top: 3.96rem;
     padding-bottom: 4.4rem;
   }
 }
@@ -67,8 +67,12 @@
   @include title;
   margin: 0 0 1.1rem;
 
+  @include vp-1199 {
+    margin: 0 0 1.1rem -0.8rem;
+  }
+
   @include vp-767 {
-    margin: 0 0 1.35rem;
+    margin: 0 0 1.35rem -0.6rem;
   }
 }
 
@@ -123,6 +127,8 @@
   @include vp-767 {
     font-size: 1em;
     line-height: 150%;
+
+    padding-bottom: 0.9rem;
   }
 }
 
@@ -218,7 +224,7 @@ input[type="radio"]:checked + label::after {
   }
 
   @include vp-767 {
-    padding: 2.7rem 2rem 3rem;
+    padding: 2.7rem 2.2em 3rem;
   }
 }
 
@@ -252,7 +258,7 @@ input[type="radio"]:checked + label::after {
   margin-bottom: 4rem;
 
   @include vp-767 {
-    margin-bottom: 3.3rem;
+    margin-bottom: 3.35rem;
   }
 }
 

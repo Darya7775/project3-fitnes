@@ -6,6 +6,8 @@
   position: relative;
   padding-top: 3.4rem;
   padding-bottom: 5.7rem;
+  padding-left: 6.44em;
+  padding-right: 6.44em;
 
   @include vp-1199 {
     padding-top: 3rem;
@@ -36,11 +38,11 @@
   margin-bottom: 3rem;
 
   @include vp-1199 {
-    margin-bottom: 2rem;
+    margin: 0 0 2rem -0.3rem;
   }
 
   @include vp-767 {
-    margin-bottom: 2.65rem;
+    margin: 0 0 2.75rem -0.3rem;
   }
 }
 
@@ -230,7 +232,7 @@
   }
 
   @include vp-767 {
-    top: 58.5%;
+    top: 55.5%;
   }
 }
 

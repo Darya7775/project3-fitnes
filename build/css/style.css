@@ -2123,7 +2123,7 @@ input[type=radio]:checked + label::after {
   grid-template-columns: repeat(2, auto);
   -ms-grid-rows: (auto)[5];
   grid-template-rows: repeat(5, auto);
-  padding: 5.08rem 4.94rem 5.3rem 4.8rem;
+  padding: 4.2rem 4.94rem 5.3rem 4.8rem;
 }
 
 .super-games__wrapper-img {
@@ -2143,7 +2143,7 @@ input[type=radio]:checked + label::after {
   font-size: 5.13em;
   line-height: 96%;
   letter-spacing: 0.03em;
-  margin: 0.15rem 0 2rem 0.87rem;
+  margin: 1rem 0 2rem 0.87rem;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
@@ -2255,6 +2255,8 @@ input[type=radio]:checked + label::after {
   position: relative;
   padding-top: 3.4rem;
   padding-bottom: 5.7rem;
+  padding-left: 6.44em;
+  padding-right: 6.44em;
 }
 
 .trainer__container h2 {
@@ -2555,7 +2557,7 @@ input[type=radio]:checked + label::after {
   line-height: 1.2em;
   letter-spacing: 0.03em;
   margin: 0;
-  margin-bottom: 3.4rem;
+  margin: 0 0 3.4rem 0.7rem;
   text-align: center;
 }
 
@@ -2566,15 +2568,15 @@ input[type=radio]:checked + label::after {
   text-align: start;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 0.7fr 1fr;
-  grid-template-columns: 1fr 0.7fr 1fr;
+  -ms-grid-columns: 1fr 0.72fr 1fr;
+  grid-template-columns: 1fr 0.72fr 1fr;
   -ms-grid-rows: -webkit-min-content -webkit-min-content;
   -ms-grid-rows: min-content min-content;
   grid-template-rows: -webkit-min-content -webkit-min-content;
   grid-template-rows: min-content min-content;
-  -webkit-column-gap: 3.1rem;
-  -moz-column-gap: 3.1rem;
-  column-gap: 3.1rem;
+  -webkit-column-gap: 2.7rem;
+  -moz-column-gap: 2.7rem;
+  column-gap: 2.7rem;
 }
 
 .benefits__item {
@@ -2619,6 +2621,7 @@ input[type=radio]:checked + label::after {
   color: #ffffff;
   background-color: #1c3374;
   padding: 4.06rem 2.13rem;
+  margin-right: 0.9rem;
   text-align: center;
 }
 
@@ -3164,6 +3167,11 @@ input[type=radio]:checked + label::after {
   user-select: none;
 }
 
+.footer__wrapper {
+  /* autoprefixer: ignore next */
+  display: contents;
+}
+
 .footer__list {
   margin: 0.5rem 0 0 0.5rem;
   padding: 0;
@@ -3466,6 +3474,10 @@ input[type=radio]:checked + label::after {
     line-height: 1.19em;
   }
 
+  .subscription__container h3 {
+    margin: 0 0 1.1rem -0.8rem;
+  }
+
   .subscription__wrapper {
     gap: 3.38rem;
     margin-bottom: 2.8rem;
@@ -3513,7 +3525,7 @@ input[type=radio]:checked + label::after {
   .super-games__wrapper h2 {
     font-size: 3em;
     line-height: 96%;
-    margin: 0.38rem 0 0 0.5rem;
+    margin: 0 0 0 0.5rem;
   }
 
   .super-games__wrapper p {
@@ -3565,7 +3577,7 @@ input[type=radio]:checked + label::after {
   }
 
   .trainer__container h2 {
-    margin-bottom: 2rem;
+    margin: 0 0 2rem -0.3rem;
   }
 
   .trainer__item {
@@ -3634,15 +3646,15 @@ input[type=radio]:checked + label::after {
   }
 
   .reviews__button {
-    top: 57.8%;
+    top: 55%;
   }
 
   .reviews__button--prev {
-    left: 38px;
+    left: 54px;
   }
 
   .reviews__button--next {
-    right: 51px;
+    right: 36px;
   }
 
   .benefits__container {
@@ -3656,7 +3668,7 @@ input[type=radio]:checked + label::after {
   }
 
   .benefits__container h2 {
-    margin-bottom: 2.8rem;
+    margin: 0 0 2.8rem -1.4rem;
   }
 
   .benefits__list {
@@ -3697,6 +3709,7 @@ input[type=radio]:checked + label::after {
     grid-area: 2/1/3/-1;
     padding: 1.9rem 8rem 2.5rem;
     width: 65%;
+    margin-right: 0;
   }
 
   .benefits__item--four {
@@ -3754,7 +3767,7 @@ input[type=radio]:checked + label::after {
   }
 
   .stock__container h2 {
-    margin-bottom: 2.5rem;
+    margin: 0 0 2.5rem -0.5rem;
   }
 
   .stock__wrapper {
@@ -4048,7 +4061,7 @@ input[type=radio]:checked + label::after {
   }
 
   .subscription__container {
-    padding-top: 4rem;
+    padding-top: 3.96rem;
     padding-bottom: 4.4rem;
   }
 
@@ -4058,7 +4071,7 @@ input[type=radio]:checked + label::after {
   }
 
   .subscription__container h3 {
-    margin: 0 0 1.35rem;
+    margin: 0 0 1.35rem -0.6rem;
   }
 
   .subscription__wrapper {
@@ -4069,6 +4082,7 @@ input[type=radio]:checked + label::after {
   .subscription__wrapper label {
     font-size: 1em;
     line-height: 150%;
+    padding-bottom: 0.9rem;
   }
 
   .subscription__tabs-list {
@@ -4077,7 +4091,7 @@ input[type=radio]:checked + label::after {
   }
 
   .subscription__item {
-    padding: 2.7rem 2rem 3rem;
+    padding: 2.7rem 2.2em 3rem;
   }
 
   .subscription__item h4 {
@@ -4086,7 +4100,7 @@ input[type=radio]:checked + label::after {
   }
 
   .subscription__text {
-    margin-bottom: 3.3rem;
+    margin-bottom: 3.35rem;
   }
 
   .subscription__price {
@@ -4122,9 +4136,21 @@ input[type=radio]:checked + label::after {
     flex-direction: column;
   }
 
+  .super-games__wrapper {
+    -webkit-column-gap: 2rem;
+    -moz-column-gap: 2rem;
+    column-gap: 2rem;
+    padding: 2.7rem 2.9rem 3.1rem 2.8rem;
+  }
+
   .super-games__wrapper-img {
     padding-bottom: 100%;
     background-image: url("../img/super-games-img-mobile.jpg");
+  }
+
+  .super-games__wrapper h2 {
+    line-height: 98%;
+    margin: 0 0 0 0.5rem;
   }
 
   .trainer__container {
@@ -4142,7 +4168,7 @@ input[type=radio]:checked + label::after {
   }
 
   .trainer__container h2 {
-    margin-bottom: 2.65rem;
+    margin: 0 0 2.75rem -0.3rem;
   }
 
   .trainer__item {
@@ -4162,7 +4188,7 @@ input[type=radio]:checked + label::after {
   }
 
   .trainer__button {
-    top: 58.5%;
+    top: 55.5%;
   }
 
   .trainer__button--prev {
@@ -4229,21 +4255,25 @@ input[type=radio]:checked + label::after {
   }
 
   .reviews__button--prev {
-    left: 9px;
+    left: 21px;
   }
 
   .reviews__button--next {
-    right: 16px;
+    right: 3px;
   }
 
   .benefits__container {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 3.9rem;
+    padding-bottom: 4.1rem;
   }
 
   .benefits__container h2 {
     font-size: 2em;
     line-height: 1.19em;
+  }
+
+  .benefits__container h2 {
+    margin-left: -1rem;
   }
 
   .benefits__list {
@@ -4324,12 +4354,13 @@ input[type=radio]:checked + label::after {
   }
 
   .stock__container h2 {
-    margin-bottom: 2.7rem;
+    margin: 0 0 2.7rem -0.3rem;
   }
 
   .stock__wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    gap: 1.95rem;
   }
 
   .stock__cover--one {
@@ -4379,7 +4410,7 @@ input[type=radio]:checked + label::after {
   }
 
   .stock__wrapper-img {
-    padding-bottom: 104%;
+    padding-bottom: 103%;
     background-image: url("../img/stock-img-mobile.jpg");
   }
 
@@ -4449,27 +4480,37 @@ input[type=radio]:checked + label::after {
   .footer__container {
     padding-top: 2.8rem;
     padding-bottom: 3.2rem;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 1fr 1fr 1fr auto;
-    grid-template-rows: 1fr 1fr 1fr auto;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 0.9rem;
-    -webkit-column-gap: 1.9rem;
-    -moz-column-gap: 1.9rem;
-    column-gap: 1.9rem;
-    grid-auto-flow: row;
+    display: block;
   }
 
   .footer__logo {
     font-size: 1.25em;
     line-height: 1.2em;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .footer__wrapper {
+    display: block;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1.9rem;
+    -moz-column-gap: 1.9rem;
+    column-gap: 1.9rem;
   }
 
   .footer__list {
     /* autoprefixer: ignore next */
     display: contents;
+  }
+
+  .footer__item {
+    margin-bottom: 1rem;
+  }
+
+  .footer__item:last-of-type {
+    margin-bottom: 0;
   }
 
   .footer__link {
@@ -4478,11 +4519,7 @@ input[type=radio]:checked + label::after {
   }
 
   .footer__social {
-    -ms-grid-column: 1;
-    grid-column-start: 1;
-    -ms-grid-column-span: -2;
-    grid-column-end: -1;
-    margin-top: 1.4rem;
+    margin-top: 1.6rem;
     max-width: 13rem;
   }
 }

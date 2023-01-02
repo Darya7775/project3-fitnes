@@ -23,11 +23,11 @@
   margin-bottom: 2.13rem;
 
   @include vp-1199 {
-    margin-bottom: 2.5rem;
+    margin: 0 0 2.5rem -0.5rem;
   }
 
   @include vp-767 {
-    margin-bottom: 2.7rem;
+    margin: 0 0 2.7rem -0.3rem;
   }
 }
 
@@ -43,6 +43,7 @@
 
   @include vp-767 {
     grid-template-columns: 1fr;
+    gap: 1.95rem;
   }
 }
 
@@ -257,7 +258,7 @@
   }
 
   @include vp-767 {
-    padding-bottom: 104%;
+    padding-bottom: 103%;
     background-image: url("../img/stock-img-mobile.jpg");
 
     @include retina {
@@ -269,18 +270,3 @@
     }
   }
 }
-
-// .stock__img {
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-//   object-position: -44px;
-
-//   @include vp-1199 {
-//     object-position: 0;
-//   }
-
-//   @include vp-767 {
-//     aspect-ratio: 1/1.03;
-//   }
-// }
