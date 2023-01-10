@@ -2870,12 +2870,10 @@ input[type=radio]:focus-visible + label {
   background-color: #ed0233;
   color: #ffffff;
   padding: 2rem 2.81rem 2.6rem;
-  position: absolute;
+  position: relative;
   left: 0;
   top: 0;
   right: 0;
-  bottom: 0;
-  overflow-y: scroll;
 }
 
 .stock__wrap h3 {
@@ -3343,12 +3341,6 @@ input[type=radio]:focus-visible + label {
   }
 }
 
-@media (max-width: 96.88em) {
-  .stock__col {
-    height: 28.8rem;
-  }
-}
-
 @media (max-width: 89.94em) {
   .container {
     padding-left: 6.44em;
@@ -3378,10 +3370,6 @@ input[type=radio]:focus-visible + label {
 
   .super-games__wrapper-img {
     height: auto;
-  }
-
-  .stock__col {
-    height: 30.4rem;
   }
 
   .footer__list {
@@ -3874,10 +3862,6 @@ input[type=radio]:focus-visible + label {
     margin-bottom: 3.1rem;
   }
 
-  .stock__col {
-    height: auto;
-  }
-
   .stock__wrap {
     padding: 2rem 2.5rem 2.7rem 2.81rem;
   }
@@ -3887,8 +3871,8 @@ input[type=radio]:focus-visible + label {
   }
 
   .stock__wrapper-img {
-    height: 0;
-    padding-bottom: 115.8%;
+    height: auto;
+    padding-bottom: 0;
     background-image: url("../img/stock-img-tablet.jpg");
   }
 
@@ -4481,10 +4465,6 @@ input[type=radio]:focus-visible + label {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
-  }
-
-  .stock__col {
-    height: 18.7rem;
   }
 
   .stock__wrap {
