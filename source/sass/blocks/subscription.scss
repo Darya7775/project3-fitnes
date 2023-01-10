@@ -77,22 +77,14 @@
 }
 
 .subscription__wrapper {
-  display: inline-flex;
+  display: flex;
   gap: 2.88rem;
   justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 2.44rem;
 
   position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0.13rem;
-    background-color: rgba(120, 120, 120, 0.2);
-  }
+  overflow: hidden;
 
   @include vp-1199 {
     gap: 3.38rem;
@@ -116,6 +108,28 @@
 
   padding-bottom: 0.75rem;
   cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% + 2.88rem);
+    height: 0.13rem;
+    background-color: rgba(120, 120, 120, 0.2);
+
+    @include vp-1199 {
+      width: calc(100% + 3.38rem);
+    }
+
+    @include vp-767 {
+      width: calc(100% + 2.85rem);
+    }
+  }
+
+  &:last-of-type::before {
+    width: 100%;
+  }
 
   @include vp-1199 {
     font-size: 1.13em;
@@ -163,6 +177,10 @@ input[type="radio"]:checked + label::after {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+input[type="radio"]:focus-visible + label {
+  outline: 3px solid #d10a42;
 }
 
 .subscription__tabs-list {

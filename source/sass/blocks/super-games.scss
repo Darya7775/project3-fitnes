@@ -23,6 +23,27 @@
   }
 }
 
+.super-games__col {
+  position: relative;
+  width: 76%;
+  background-color: #ed0233;
+
+  @include vp-1365 {
+    width: 100%;
+    height: 31.2rem;
+  }
+
+  @include vp-1199 {
+    width: 76%;
+    height: auto;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    height: 18.2rem;
+  }
+}
+
 .super-games__wrapper {
   background-color: #ed0233;
   display: grid;
@@ -31,6 +52,11 @@
   grid-template-rows: repeat(5, auto);
 
   padding: 4.2rem 4.94rem 5.3rem 4.8rem;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 
   @include vp-1199 {
     column-gap: 2.1rem;

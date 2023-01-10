@@ -13,6 +13,19 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
+  // header
+
+  const buttonBay = document.querySelector('.header__button');
+
+  buttonBay.addEventListener('click', (e) => {
+    e.preventDefault();
+    const buttonId = buttonBay.getAttribute('href');
+    document.querySelector(buttonId).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  });
+
   // gym
 
   const gymVideo = document.querySelector('.gym__video-wrapper');

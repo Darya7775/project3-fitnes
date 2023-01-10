@@ -113,8 +113,9 @@
   display: block;
   color: $color-default-white;
   background-color: #1c3374;
-  padding: 4.06rem 2.13rem;
+  padding: 4.06rem 2.13rem 3.2rem;
   margin-right: 0.9rem;
+  margin-bottom: 0.3rem;
   text-align: center;
 
   @include vp-1199 {
@@ -122,6 +123,7 @@
     padding: 1.9rem 8rem 2.5rem;
     width: 65%;
     margin-right: 0;
+    margin-bottom: 0;
   }
 
   @include vp-767 {

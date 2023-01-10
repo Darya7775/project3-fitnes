@@ -163,11 +163,40 @@
   }
 }
 
+.stock__col {
+  position: relative;
+  width: 100%;
+  background-color: #ed0233;
+
+  @include vp-1550 {
+    height: 28.8rem;
+  }
+
+  @include vp-1365 {
+    height: 30.4rem;
+  }
+
+  @include vp-1199 {
+    height: auto;
+  }
+
+  @include vp-767 {
+    height: 18.7rem;
+  }
+}
+
 .stock__wrap {
   background-color: #ed0233;
   color: $color-default-white;
 
   padding: 2rem 2.81rem 2.6rem;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
 
   @include vp-1199 {
     padding: 2rem 2.5rem 2.7rem 2.81rem;
@@ -230,6 +259,7 @@
   background-image: url("../img/stock-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
   @include vp-1919 {
     height: auto;

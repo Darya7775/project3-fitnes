@@ -21,22 +21,23 @@
 }
 
 .header__logo {
-  @include AlumniSans600;
-  font-size: 2.25em;
-  line-height: 1.19em;
-  letter-spacing: 0.02em;
-  color: $color-default-white;
-
+  display: block;
   align-self: flex-start;
+  width: 7.63rem;
+  height: 2.75rem;
+  padding-top: 0.6rem;
+
+  user-select: none;
 
   @include vp-1199 {
-    font-size: 1.5em;
-    line-height: 1.21em;
+    padding-top: 0.4rem;
+    width: 5.13rem;
+    height: 1.06rem;
   }
 
   @include vp-767 {
-    font-size: 1.25em;
-    line-height: 1.2em;
+    width: 4.31rem;
+    height: 1.5rem;
   }
 }
 
@@ -197,6 +198,8 @@
 .header__button {
   @include button;
   color: $color-default-white;
+  display: block;
+  text-align: center;
 
   border: 4px solid $color-default-white;
   background-color: inherit;

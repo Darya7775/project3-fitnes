@@ -24,24 +24,24 @@
 }
 
 .footer__logo {
-  @include AlumniSans600;
-  font-size: 1.63em;
-  line-height: 1.94em;
-  letter-spacing: 0.02em;
-  color: $color-default-white;
+  display: flex;
+  width: 5.5rem;
+  height: 2rem;
+  margin-top: 0.6rem;
 
   user-select: none;
 
   @include vp-1199 {
-    font-size: 1.5em;
-    line-height: 1.21em;
+    width: 5.13rem;
+    height: 1.13rem;
+    margin: 0.4rem 0 0;
   }
 
   @include vp-767 {
-    font-size: 1.25em;
-    line-height: 1.2em;
     display: block;
-    margin-bottom: 1rem;
+    width: 4.25rem;
+    height: 0.94rem;
+    margin: 0.4rem 0 1.2rem;
   }
 }
 
