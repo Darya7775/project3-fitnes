@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import Swiper, {Navigation, Keyboard} from 'swiper';
+import Swiper, {Navigation, Keyboard, A11y} from 'swiper';
 
 // ---------------------------------
 
@@ -101,7 +101,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // trainers
 
   void new Swiper('.trainer__swiper', {
-    modules: [Navigation, Keyboard],
+    modules: [Navigation, Keyboard, A11y],
     spaceBetween: 40,
     grabCursor: true,
     loop: true,
@@ -147,7 +147,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // reviews
 
   void new Swiper('.reviews__swiper', {
-    modules: [Navigation],
+    modules: [Navigation, A11y],
     grabCursor: true,
     spaceBetween: 30,
     navigation: {
